@@ -5,6 +5,12 @@
 	<artifactId>FirstProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+	
+	<properties>
+		<log4j.version>1.2.17</log4j.version>
+		<mysql.version>5.1.27</mysql.version>
+	</properties>
+	
 	<dependencies>
 		<!-- <dependency>
 			<groupId>org.springframework</groupId>
@@ -13,9 +19,15 @@
 		</dependency> -->
 
 		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.27</version>
+			<version>${mysql.version}</version>
 			<scope>runtime</scope>
 		</dependency>
 
